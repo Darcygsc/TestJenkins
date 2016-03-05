@@ -17,14 +17,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-//    for (int i = 0; i <10; i++) {
-//        dispatch_queue_t serialQueue = dispatch_queue_create("com.gcd.MyGCD", DISPATCH_QUEUE_CONCURRENT);
-//        
-//        dispatch_async(serialQueue, ^{
-//            NSLog(@"%@",[NSThread currentThread]);
-//        });
-//        
-//    }
+    for (int i = 0; i <10; i++) {
+        dispatch_queue_t serialQueue = dispatch_queue_create("com.gcd.MyGCD", DISPATCH_QUEUE_CONCURRENT);
+        
+        dispatch_async(serialQueue, ^{
+            NSLog(@"%@",[NSThread currentThread]);
+        });
+        
+    }
     
     
 //    [self testSerial];
